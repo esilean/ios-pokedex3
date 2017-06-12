@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,22 +22,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="init" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-gS-BEW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="init" translatesAutoresizingMaskIntoConstraints="NO" id="gC6-gS-BEW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leandro Bevilaqua" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHu-HT-XMo">
+                                <rect key="frame" x="24" y="86" width="327" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HhA-IM-eUR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-VJ-D0C">
+                                <rect key="frame" x="161" y="586" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4e9-wN-cPR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jMt-VJ-D0C" secondAttribute="bottom" constant="60" id="2Rw-e2-TII"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="gC6-gS-BEW" secondAttribute="bottom" id="IhJ-He-xol"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHu-HT-XMo" secondAttribute="trailing" constant="8" id="LEs-CH-wSZ"/>
+                            <constraint firstItem="jMt-VJ-D0C" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LgN-HI-ypO"/>
                             <constraint firstItem="gC6-gS-BEW" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="Tkl-sz-d4W"/>
+                            <constraint firstItem="EHu-HT-XMo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="cvz-7D-sey"/>
+                            <constraint firstItem="EHu-HT-XMo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="i5K-Mb-dtd"/>
                             <constraint firstItem="gC6-gS-BEW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="lC7-Px-8IB"/>
                             <constraint firstAttribute="trailing" secondItem="gC6-gS-BEW" secondAttribute="trailing" id="og9-ux-WeT"/>
+                            <constraint firstItem="EHu-HT-XMo" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="66" id="qLW-G4-TFo"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>
